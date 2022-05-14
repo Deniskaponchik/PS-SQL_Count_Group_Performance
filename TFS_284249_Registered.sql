@@ -1,4 +1,4 @@
---Джойним текущий + будущий CounterInIncident. использую CURSOR
+-- Складываем прошлый + текущий + будущий CounterInIncident
 
 USE BPMonline_80;
 --GO
