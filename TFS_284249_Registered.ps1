@@ -19,19 +19,11 @@ New-Item -Path . -Name $NameScript -ItemType "Directory"
 
 
 # Server, base, table, auth
-write-host  'Сервера bpm:'  -ForegroundColor Green
-'t2ru-tr-tst-02'
-'t2ru-bpmdb-read'
-'t2ru-bpmanl-01'
-[Environment]::NewLine
 #$dataSource = “server\instance”
-#$dataSource = "t2ru-tr-tst-02"
  $dataSource = Read-Host "Адрес сервера"
 
 #$database = “master”
-$database = "BPMonline_80"
-
-$TableName = "dbo.account"
+$database = Read-Host "Имя базы данных"
 
 $auth = “Integrated Security=SSPI;”
 #$auth = Get-Credential
