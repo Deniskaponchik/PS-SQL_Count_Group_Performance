@@ -1,6 +1,4 @@
--- Складываем прошлый + текущий + будущий CounterInIncident
-
-USE BPMonline_80;
+USE DATABASE;
 --GO
 
 /*CREATE NONCLUSTERED INDEX [IX_SRtable] ON #SR ([id] ASC)*/
@@ -212,7 +210,7 @@ OUTER APPLY (
 
 
 
-/*
+/* Поиск связанных таблиц
 SELECT  f.name AS ForeignKey ,
         SCHEMA_NAME(f.SCHEMA_ID) AS SchemaName ,
         OBJECT_NAME(f.parent_object_id) AS TableName ,
